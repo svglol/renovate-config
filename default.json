@@ -1,0 +1,106 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Useful renovate config rules",
+  "extends": [
+    "config:base",
+    ":labels(dependencies, chore)",
+    ":automergePr",
+    ":automergeMinor",
+    ":automergeRequireAllStatusChecks",
+    ":maintainLockFilesWeekly",
+    ":pinAllExceptPeerDependencies",
+    ":widenPeerDependencies",
+    ":semanticCommitTypeAll(chore)",
+    ":dependencyDashboard",
+    ":ignoreModulesAndTests",
+    "group:monorepos",
+    "group:recommended",
+    "replacements:all",
+    "workarounds:all"
+  ],
+  "prCreation": "immediate",
+  "meteor": {
+    "enabled": false
+  },
+  "npm": {
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": ["dependencies"],
+      "rangeStrategy": "update-lockfile"
+    },
+    {
+      "groupName": "vite dependencies",
+      "groupSlug": "vite",
+      "matchPackageNames": ["vite"],
+      "matchPackagePatterns": ["^@vitejs/", "^vite-"]
+    },
+    {
+      "extends": ["packages:test"],
+      "matchPackageNames": ["c8", "happy-dom", "jsdom", "vitest"],
+      "matchPackagePatterns": ["^@vitest/"],
+      "groupName": "test packages"
+    },
+    {
+      "matchPackagePatterns": ["release-it"],
+      "groupName": "release-it"
+    },
+    {
+      "extends": ["packages:linters"],
+      "matchPackageNames": ["commitlint"],
+      "groupName": "all linters"
+    },
+    {
+      "matchPackageNames": ["histoire"],
+      "matchPackagePatterns": ["^@histoire/"],
+      "groupName": "histoire"
+    },
+    {
+      "groupName": "nuxt core",
+      "groupSlug": "nuxt",
+      "matchPackageNames": [
+        "@nuxt/babel-preset-app-edge",
+        "@nuxt/babel-preset-app",
+        "@nuxt/builder-edge",
+        "@nuxt/builder",
+        "@nuxt/cli-edge",
+        "@nuxt/cli",
+        "@nuxt/config-edge",
+        "@nuxt/config",
+        "@nuxt/core-edge",
+        "@nuxt/core",
+        "@nuxt/generator-edge",
+        "@nuxt/generator",
+        "@nuxt/kit-edge",
+        "@nuxt/kit",
+        "@nuxt/module-builder",
+        "@nuxt/schema-edge",
+        "@nuxt/schema",
+        "@nuxt/server-edge",
+        "@nuxt/server",
+        "@nuxt/test-utils-edge",
+        "@nuxt/test-utils",
+        "@nuxt/types-edge",
+        "@nuxt/types",
+        "@nuxt/utils-edge",
+        "@nuxt/utils",
+        "@nuxt/vite-builder-edge",
+        "@nuxt/vite-builder",
+        "@nuxt/vue-app-edge",
+        "@nuxt/vue-app",
+        "@nuxt/vue-renderer-edge",
+        "@nuxt/vue-renderer",
+        "@nuxt/webpack-builder-edge",
+        "@nuxt/webpack-builder",
+        "@nuxt/webpack-edge",
+        "@nuxt/webpack",
+        "nuxi",
+        "nuxt-edge",
+        "nuxt",
+        "nuxt3",
+        "vue"
+      ]
+    }
+  ]
+}
