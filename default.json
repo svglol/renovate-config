@@ -18,7 +18,7 @@
     "replacements:all",
     "workarounds:all",
     "schedule:automergeDaily",
-    "schedule:daily"
+    "schedule:earlyMondays"
   ],
   "timezone": "Pacific/Auckland",
   "prCreation": "immediate",
