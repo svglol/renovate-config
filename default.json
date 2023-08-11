@@ -16,9 +16,7 @@
     "group:monorepos",
     "group:recommended",
     "replacements:all",
-    "workarounds:all",
-    "schedule:automergeDaily",
-    "schedule:earlyMondays"
+    "workarounds:all"
   ],
   "timezone": "Pacific/Auckland",
   "prCreation": "immediate",
