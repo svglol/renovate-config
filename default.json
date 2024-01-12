@@ -28,12 +28,6 @@
   },
   "packageRules": [
     {
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch"
-    },
-    {
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "update-lockfile"
     },
@@ -64,7 +58,7 @@
       "groupName": "histoire"
     },
     {
-      "groupName": "nuxt core",
+      "groupName": "nuxt",
       "groupSlug": "nuxt",
       "matchPackageNames": [
         "@nuxt/babel-preset-app-edge",
@@ -77,8 +71,10 @@
         "@nuxt/config",
         "@nuxt/core-edge",
         "@nuxt/core",
+        "@nuxt/devtools",
         "@nuxt/generator-edge",
         "@nuxt/generator",
+        "@nuxt/image",
         "@nuxt/kit-edge",
         "@nuxt/kit",
         "@nuxt/module-builder",
@@ -90,6 +86,7 @@
         "@nuxt/test-utils",
         "@nuxt/types-edge",
         "@nuxt/types",
+        "@nuxt/ui",
         "@nuxt/utils-edge",
         "@nuxt/utils",
         "@nuxt/vite-builder-edge",
