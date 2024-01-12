@@ -58,6 +58,11 @@
       "groupName": "histoire"
     },
     {
+      "matchPackageNames": ["tiptap"],
+      "matchPackagePatterns": ["^@tiptap/"],
+      "groupName": "tiptap"
+    },
+    {
       "groupName": "nuxt",
       "groupSlug": "nuxt",
       "matchPackageNames": [
