@@ -49,7 +49,7 @@
     },
     {
       "extends": ["packages:linters"],
-      "matchPackageNames": ["@commitlint"],
+      "matchPackageNames": ["@commitlint", "stylelint"],
       "groupName": "all linters"
     },
     {
