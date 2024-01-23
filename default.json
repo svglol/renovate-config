@@ -4,7 +4,7 @@
   "extends": [
     "config:base",
     ":labels(dependencies, chore)",
-    ":automergePr",
+    ":automergeBranch",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
     ":maintainLockFilesWeekly",
