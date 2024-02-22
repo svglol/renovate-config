@@ -91,7 +91,6 @@
         "@nuxt/test-utils",
         "@nuxt/types-edge",
         "@nuxt/types",
-        "@nuxt/ui",
         "@nuxt/utils-edge",
         "@nuxt/utils",
         "@nuxt/vite-builder-edge",
