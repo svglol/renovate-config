@@ -29,7 +29,7 @@
   },
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
       "rangeStrategy": "update-lockfile"
     },
     {
@@ -107,8 +107,7 @@
         "nuxt",
         "nuxt3",
         "vue"
-      ],
-      "rangeStrategy": "update-lockfile"
+      ]
     }
   ]
 }
