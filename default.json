@@ -7,6 +7,7 @@
     ":automergeBranch",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
+    "schedule:automergeEarlyMondays",
     ":maintainLockFilesWeekly",
     ":pinAllExceptPeerDependencies",
     ":widenPeerDependencies",
@@ -76,10 +77,8 @@
         "@nuxt/config",
         "@nuxt/core-edge",
         "@nuxt/core",
-        "@nuxt/devtools",
         "@nuxt/generator-edge",
         "@nuxt/generator",
-        "@nuxt/image",
         "@nuxt/kit-edge",
         "@nuxt/kit",
         "@nuxt/module-builder",
@@ -106,8 +105,10 @@
         "nuxi",
         "nuxt-edge",
         "nuxt",
-        "nuxt3"
-      ]
+        "nuxt3",
+        "vue"
+      ],
+      "rangeStrategy": "update-lockfile"
     }
   ]
 }
