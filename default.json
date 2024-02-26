@@ -7,6 +7,7 @@
     ":automergeBranch",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
+    "schedule:automergeDaily",
     ":maintainLockFilesWeekly",
     ":pinAllExceptPeerDependencies",
     ":widenPeerDependencies",
@@ -16,7 +17,8 @@
     "group:monorepos",
     "group:recommended",
     "replacements:all",
-    "workarounds:all"
+    "workarounds:all",
+    "npm:unpublishSafe"
   ],
   "timezone": "Pacific/Auckland",
   "prCreation": "immediate",
