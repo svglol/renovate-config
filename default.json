@@ -7,7 +7,6 @@
     ":automergeBranch",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
-    "schedule:automergeEarlyMondays",
     ":maintainLockFilesWeekly",
     ":pinAllExceptPeerDependencies",
     ":widenPeerDependencies",
