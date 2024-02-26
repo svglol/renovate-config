@@ -18,7 +18,9 @@
     "group:recommended",
     "replacements:all",
     "workarounds:all",
-    "npm:unpublishSafe"
+    "npm:unpublishSafe",
+    ":noUnscheduledUpdates",
+    ":disableRateLimiting"
   ],
   "timezone": "Pacific/Auckland",
   "prCreation": "immediate",
