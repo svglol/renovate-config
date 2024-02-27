@@ -7,7 +7,6 @@
     ":automergeBranch",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
-    "schedule:automergeDaily",
     ":maintainLockFilesWeekly",
     ":pinAllExceptPeerDependencies",
     ":widenPeerDependencies",
@@ -19,7 +18,6 @@
     "replacements:all",
     "workarounds:all",
     "npm:unpublishSafe",
-    ":noUnscheduledUpdates",
     ":disableRateLimiting"
   ],
   "timezone": "Pacific/Auckland",
