@@ -4,9 +4,9 @@
   "extends": [
     "config:base",
     ":labels(dependencies, chore)",
-    ":automergeBranch",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
+    ":automergePr",
     ":maintainLockFilesWeekly",
     ":pinAllExceptPeerDependencies",
     ":widenPeerDependencies",
@@ -18,7 +18,9 @@
     "replacements:all",
     "workarounds:all",
     "npm:unpublishSafe",
-    ":disableRateLimiting"
+    ":disableRateLimiting",
+    "schedule:automergeDaily",
+    ":updateNotScheduled,"
   ],
   "timezone": "Pacific/Auckland",
   "prCreation": "immediate",
