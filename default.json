@@ -20,7 +20,7 @@
     "npm:unpublishSafe",
     ":disableRateLimiting",
     "schedule:automergeDaily",
-    ":updateNotScheduled,"
+    ":updateNotScheduled"
   ],
   "timezone": "Pacific/Auckland",
   "prCreation": "immediate",
