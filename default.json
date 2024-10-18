@@ -18,9 +18,7 @@
     "replacements:all",
     "workarounds:all",
     "npm:unpublishSafe",
-    ":disableRateLimiting",
-    "schedule:automergeDaily",
-    ":updateNotScheduled"
+    ":disableRateLimiting"
   ],
   "timezone": "Pacific/Auckland",
   "prCreation": "immediate",
