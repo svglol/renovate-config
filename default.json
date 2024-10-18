@@ -65,6 +65,11 @@
       "groupName": "tiptap"
     },
     {
+      "matchPackageNames": ["@iconify/json"],
+      "matchPackagePatterns": ["^@iconify/"],
+      "groupName": "iconify"
+    },
+    {
       "groupName": "nuxt",
       "groupSlug": "nuxt",
       "matchPackageNames": [
